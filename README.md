@@ -1,6 +1,6 @@
 # Investment Stock API
 
-[![Nokogiri](https://res.cloudinary.com/dloadb2bx/image/upload/v1643485407/Product_zsqe11.gif)
+![Nokogiri](https://res.cloudinary.com/dloadb2bx/image/upload/v1643485407/Product_zsqe11.gif)
 
 In this project was used Nokogiri to scraping data from a website and save all relevant information to database. Was also developed a code to treat and remove data where name is blank. The data scraped will be used on frontend with React application.
 
