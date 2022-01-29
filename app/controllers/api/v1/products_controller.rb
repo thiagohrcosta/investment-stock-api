@@ -56,10 +56,10 @@ class Api::V1::ProductsController < Api::V1::BaseController
       next if row.css('td').length < 5
       stock = Product.create!(
           :name => row.css('td')[1].text.strip,
-          :price => row.css('td')[2].text.strip,
-          :max_price => row.css('td')[3].text.strip,
-          :min_price => row.css('td')[4].text.strip,
-          :percent_change => row.css('td')[5].text.strip
+          :price => row.css('td')[2].text.strip.to_f,
+          :max_price => row.css('td')[3].text.strip.to_f,
+          :min_price => row.css('td')[4].text.strip.to_f,
+          :percent_change => row.css('td')[5].text.strip.to_f
       )
     end
   end
